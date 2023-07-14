@@ -1,0 +1,76 @@
+<html>
+	<head>
+		<title>Weather App</title>
+		<link rel="stylesheet" href="css/weather.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+            <script type="text/javascript" src="js/weather.js"></script>
+	</head>
+	<body>
+	
+
+		<div id="loading-overlay">
+			<div class="loading-icon"></div>
+		</div>
+		<form>
+			<table id="rcorners2" border="1" height=25% width=35% align="center">
+				<tr>
+					<td align="center"><input id="rcorners1" type="text"><br></td>
+					<td><button class="button" type="button" id="eine" name="eine" value="Submit"><span>Search</span></button></td>
+				</tr>
+
+				<tr>
+					<td colspan="2" height="80"><span id="location"></span></td>
+				</tr>
+
+				<tr>
+					<td colspan="2">
+						<table border=0 width="100%" height="100%">
+							<tr>
+								<td width="7%"><img class="zoomimg1" src="images/temperature.png" height="35" width="35" /></td>
+								<td width="93%"><span id="weather"></span></td>
+							</tr>
+
+							<tr>
+								<td width="7%"><img class="zoomimg1" src="images/humidity.png" height="35" width="35" /></td>
+								<td width="93%"><span id="humidity"></span></td>
+							</tr>
+							<tr>
+								<td width="7%"><img class="zoomimg1" src="images/precipitation.png" height="35" width="35" /></td>
+								<td width="93%"><span id="precipitation"></span></td>
+							</tr>
+							<tr>
+								<td width="7%" height="50"><img class="zoomimg1" id="cimage" src="" height="35" width="35" /></td>
+								<td width="93%"><span id="conditions"></span></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<table border=0 width="100%" height="100%">
+							<tr>
+								<td>
+									<table border=0 width="100%" height="100%">
+										<tr>
+											<td width="15%"><img class="zoomimg" src="images/sunrise.png" height="60" width="60" /></td>
+											<td width="85%"><span id="sunrise"></td>
+										</tr>
+									</table>
+
+								</td>
+								<td>
+									<table border=0 width="100%" height="100%">
+										<tr>
+											<td width="15%"><img class="zoomimg" src="images/sunset.png" height="60" width="60" /></td>
+											<td width="85%"><span id="sunset"></td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>
